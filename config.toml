@@ -1,6 +1,6 @@
-baseURL = "https://omarvides.github.io"
+baseURL = "https://omarvides.github.io/blog"
 languageCode = "en-us"
-title = "JavaScript Guatemala"
+title = "Omar Vide's Blog"
 publishDir = "docs"
 
 [params]
