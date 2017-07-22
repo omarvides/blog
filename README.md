@@ -1,1 +1,0 @@
-# Omar Vide's Blog
