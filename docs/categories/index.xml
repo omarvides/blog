@@ -10,5 +10,14 @@
 	<atom:link href="https://omarvides.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Javascript</title>
+      <link>https://omarvides.github.io/blog/categories/javascript/</link>
+      <pubDate>Sat, 22 Jul 2017 12:49:07 -0600</pubDate>
+      
+      <guid>https://omarvides.github.io/blog/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
