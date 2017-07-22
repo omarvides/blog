@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript Guatemala</title>
+    <link>https://omarvides.github.io/</link>
+    <description>Recent content on JavaScript Guatemala</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Jul 2017 12:49:07 -0600</lastBuildDate>
+    
+	<atom:link href="https://omarvides.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript Guatemala</title>
+      <link>https://omarvides.github.io/post/javascript-guatemala/</link>
+      <pubDate>Sat, 22 Jul 2017 12:49:07 -0600</pubDate>
+      
+      <guid>https://omarvides.github.io/post/javascript-guatemala/</guid>
+      <description>Hola, este blog va a tener cosas de JavaScript :)</description>
+    </item>
+    
+  </channel>
+</rss>
