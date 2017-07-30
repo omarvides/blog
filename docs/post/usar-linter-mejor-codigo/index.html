@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Usar un linter mejora tu código JavaScript  &middot; Omar Vide&#39;s Blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="javascript, desarrollo, programación, buenas prácticas, ">
+
+
+<meta property="og:title" content="Usar un linter mejora tu código JavaScript  &middot; Omar Vide&#39;s Blog ">
+<meta property="og:site_name" content="Omar Vide&#39;s Blog"/>
+<meta property="og:url" content="https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-07-22T12:49:07-06:00" />
+<meta property="og:article:modified_time" content="2017-07-22T12:49:07-06:00" />
+
+  
+    
+<meta property="og:article:tag" content="javascript">
+    
+<meta property="og:article:tag" content="desarrollo">
+    
+<meta property="og:article:tag" content="programación">
+    
+<meta property="og:article:tag" content="buenas prácticas">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Usar un linter mejora tu código JavaScript" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/" />
+<meta name="twitter:domain" content="https://omarvides.github.io/blog/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Usar un linter mejora tu código JavaScript",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-07-22",
+    "description": "",
+    "wordCount": 181
+  }
+</script>
+
+
+
+<link rel="canonical" href="https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://omarvides.github.io/touch-icon-144-precomposed.png">
+<link href="https://omarvides.github.io/favicon.ico" rel="icon">
+
+<meta name="generator" content="Hugo 0.25.1" />
+
+
+  <link rel="stylesheet" href="https://omarvides.github.io/blog/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://omarvides.github.io/blog/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://omarvides.github.io/blog/assets/css/style.css">
+  <link rel="stylesheet" href="https://omarvides.github.io/blog/assets/css/tomorrow-night.css">
+  <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-light blog-header">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#exCollapsingNavbar2"
+        aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+      <a class="navbar-brand" href="https://omarvides.github.io/blog/">Omar Vide&#39;s Blog</a>
+      <ul class="nav navbar-nav">
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container p-a-0">
+  <div class="row m-l-0 m-r-0">
+    <div class="col-xs-12 col-md-9 post-container">
+      <div>
+  
+<a href="https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/" itemprop="url">
+    
+      <img src="https://omarvides.github.io/blog/usar-linter-mejor-codigo/constellation.jpg" class="img-fluid" alt="Generic responsive image">
+    
+</a>
+
+
+  <h1 class="post-title">Usar un linter mejora tu código JavaScript
+</h1>
+
+  <div class="post-meta">
+  <div class="post-meta-item">
+    <i class="fa fa-calendar"></i>
+    <time datetime="2017-07-22">22 Jul, 2017</time>
+
+    
+    &middot; 1 Minute Read
+    &middot; 181 Words
+  </div>
+
+  
+      
+      
+      <div class="post-meta-item">
+          <i class="fa fa-folder-open-o"></i>
+          
+          <a class="article-category-link" href="https://omarvides.github.io/blog/categories/javascript">JavaScript</a>
+          
+          
+      </div>
+      
+  
+
+  
+      
+      
+        <div class="post-meta-item">
+          <i class="fa fa-tags"></i>
+          
+          <a href="https://omarvides.github.io/blog/tags/javascript/">javascript</a>
+          &middot;
+          
+          <a href="https://omarvides.github.io/blog/tags/desarrollo/">desarrollo</a>
+          &middot;
+          
+          <a href="https://omarvides.github.io/blog/tags/programaci%c3%b3n/">programación</a>
+          &middot;
+          
+          <a href="https://omarvides.github.io/blog/tags/buenas-pr%c3%a1cticas/">buenas prácticas</a>
+          
+          
+        </div>
+      
+  
+  
+
+</div>
+
+</div>
+
+      <div class="content">
+  
+
+<p>Utilizar un linter puede mejorar dramáticamente tu código JavaScript, puede ayudarte a
+escribir código mas limpio, mas fácil de entender y más facil de mantener.</p>
+
+<p>Usar un linter te ayuda a estandarizar el código y enforza el uso de un estilo, como consecuencia
+mejora la forma en que los equipos colaboran en soluciones y proyectos y la calidad de los mismos.</p>
+
+<h3 id="que-hace-un-linter-de-javascript">Que hace un linter de JavaScript?</h3>
+
+<p>Un linter de JavaScript revisa tu código buscando errores y problemas de sintáxis, se asegura también que
+el código que escribes siga con un estilo, esto causa que todo el código escrito en un proyecto se vea como
+escrito por la misma persona, y eso lo hace mas legible y mantenible.</p>
+
+<h1 id="eslint-instalation-steps">Eslint instalation steps</h1>
+
+<h2 id="install-yarn">Install yarn</h2>
+
+<pre><code class="language-bash">npm install -g yarn
+</code></pre>
+
+<h2 id="install-eslint">Install eslint</h2>
+
+<pre><code class="language-bash">export PKG=eslint-config-airbnb
+npm info &quot;$PKG@latest&quot; peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev &quot;$PKG@latest&quot;
+</code></pre>
+
+<h2 id="create-the-eslintrc-file">Create the .eslintrc file</h2>
+
+<p>with content</p>
+
+<pre><code class="language-json">{
+  &quot;extends&quot;: &quot;airbnb&quot;
+}
+</code></pre>
+
+<h2 id="install-visual-code-plugin">Install Visual code plugin</h2>
+
+<ul>
+<li>Ctrl/Cmd + Shift + P and then type Extensions: Install Extensions</li>
+<li>Look for ESlint pluging and install it</li>
+</ul>
+
+</div>
+
+      <footer>
+    
+    
+      
+    
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+  </div>
+</footer>
+
+    </div>
+      <div class="col-xs-12 col-md-3">
+        <div class="sidebar">
+  <div class="card card-block">
+  <h4 class="card-title">RECENTS</h4>
+  <div class="card-text">
+    <div class="widget">
+      <ul id="recent-post">
+        
+        <li>
+          <div class="item-thumbnail bg-dark">
+              <a href="https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/" class="thumbnail">
+              
+                  
+                  <span style="background-image:url(https://omarvides.github.io/blog/usar-linter-mejor-codigo/constellation.jpg)"
+                    alt="Usar un linter mejora tu código JavaScript" class="thumbnail-image"></span>
+                  
+              
+              </a>
+          </div>
+            <div class="item-inner">
+              <p class="item-title"><a href="/blog/post/usar-linter-mejor-codigo/" class="title">Usar un linter mejora tu código JavaScript</a></p>
+            </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+
+</div>
+
+      </div>
+  </div>
+</div>
+
