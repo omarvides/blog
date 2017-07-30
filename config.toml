@@ -8,3 +8,8 @@ publishDir = "docs"
     showBorder = true
     backgroundColor = "white"
 
+[params.widgets]
+  recent_articles = true
+  categories = true
+  tags = true
+  tag_cloud = true
