@@ -58,7 +58,7 @@
     },
     "datePublished": "2017-07-22",
     "description": "",
-    "wordCount": 181
+    "wordCount": 407
   }
 </script>
 
@@ -118,8 +118,8 @@
     <time datetime="2017-07-22">22 Jul, 2017</time>
 
     
-    &middot; 1 Minute Read
-    &middot; 181 Words
+    &middot; 2 Minute Read
+    &middot; 407 Words
   </div>
 
   
@@ -175,31 +175,75 @@ mejora la forma en que los equipos colaboran en soluciones y proyectos y la cali
 
 <p>Un linter de JavaScript revisa tu código buscando errores y problemas de sintáxis, se asegura también que
 el código que escribes siga con un estilo, esto causa que todo el código escrito en un proyecto se vea como
-escrito por la misma persona, y eso lo hace mas legible y mantenible.</p>
+si hubiera sido escrito por la misma persona, y eso lo hace mas legible y mantenible.</p>
 
-<h1 id="eslint-instalation-steps">Eslint instalation steps</h1>
+<hr />
 
-<h2 id="install-yarn">Install yarn</h2>
+<h3 id="configurando-un-linter">Configurando un linter</h3>
+
+<p>Voy a explicar como configurar ESlint para un proyecto de Node.JS, lo necesario es:</p>
+
+<ul>
+<li>Un plugin de ESlint para el editor que utilizas</li>
+<li>Dependencias de ESlint en tu proyecto de Node</li>
+<li>Archivo de configuración de ESlint</li>
+<li>El set de reglas de ESlint que quieres aplicar a tu código (En éste caso las de Airbnb)</li>
+<li>Instalar Yarn (Éste paso es opcional, yo utilizo yarn; pero en los lugares donde sea neceario voy a indicar como ejecutar los comandos con <code>npm</code> y con <code>yarn</code>)</li>
+</ul>
+
+<h3 id="instalar-yarn-opcional">Instalar yarn (Opcional)</h3>
+
+<ul>
+<li><p>Éste paso es opcional, durante los pasos siguientes explico como instalar con <code>npm</code> y con <code>yarn</code></p>
 
 <pre><code class="language-bash">npm install -g yarn
+</code></pre></li>
+</ul>
+
+<h3 id="instalar-eslint">Instalar ESlint</h3>
+
+<ul>
+<li><p>Si prefieres utilizar yarn</p>
+
+<pre><code class="language-bash">yarn add eslint
+</code></pre></li>
+
+<li><p>Si prefieres utilizar npm</p>
+
+<pre><code class="language-bash">npm install --save eslint
+</code></pre></li>
+</ul>
+
+<h3 id="instalar-eslint-config-airbnb-set-de-reglas-de-eslint-de-airbnb">Instalar eslint-config-airbnb (set de reglas de ESlint de airbnb)</h3>
+
+<ul>
+<li><p>Utilizando <code>yarn</code> como manejador de paquetes</p>
+
+<pre><code class="language-bash">npm info &quot;eslint-config-airbnb@latest&quot; peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev &quot;eslint-config-airbnb@latest&quot;
+</code></pre></li>
+
+<li><p>Utilizando <code>npm</code> como manejador de paquetes</p>
+
+<pre><code class="language-bash">npm info &quot;eslint-config-airbnb@latest&quot; peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev &quot;eslint-config-airbnb@latest&quot;
 </code></pre>
 
-<h2 id="install-eslint">Install eslint</h2>
+<p><em>Qué es esto?</em> las últimas versiones de las dependencias de <code>eslint-config-airbnb</code> en el momento que escribo éste post están rotas, lo que hace éste comando es extraer la informacion en formato JSON de los peerDependencies de <code>eslint-config</code> extraerlas y hacer pipe al comando <code>yarn add</code> o al comando `<code>npm install</code> para que instale las versiones estables.</p></li>
+</ul>
 
-<pre><code class="language-bash">export PKG=eslint-config-airbnb
-npm info &quot;$PKG@latest&quot; peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev &quot;$PKG@latest&quot;
-</code></pre>
+<h3 id="crear-el-archivo-eslintrc-json">Crear el archivo .eslintrc.json</h3>
 
-<h2 id="create-the-eslintrc-file">Create the .eslintrc file</h2>
-
-<p>with content</p>
+<ul>
+<li><p>En la raíz de tu proyecto crea el archivo .eslintrc.json con el contenido</p>
 
 <pre><code class="language-json">{
   &quot;extends&quot;: &quot;airbnb&quot;
 }
-</code></pre>
+</code></pre></li>
+</ul>
 
-<h2 id="install-visual-code-plugin">Install Visual code plugin</h2>
+<h3 id="instalando-el-plugin-de-eslint">Instalando el plugin de ESlint</h3>
+
+<h4 id="en-visual-studio-code">En Visual Studio Code</h4>
 
 <ul>
 <li>Ctrl/Cmd + Shift + P and then type Extensions: Install Extensions</li>
@@ -251,9 +295,94 @@ npm info &quot;$PKG@latest&quot; peerDependencies --json | command sed 's/[\{\},
 
   
 
-  
+
+<div class="card card-block">
+  <h4 class="card-title">CATEGORIES</h4>
+  <div class="card-text">
+    <div class="widget">
+      <ul>
+        
+        <li class="category-list-item">
+            <a href="https://omarvides.github.io/blog/categories/javascript">
+                javascript
+            </a>
+            <span class="category-list-count">1</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
 
   
+
+
+
+<div class="card card-block">
+  <h4 class="card-title">TAGS</h4>
+  <div class="card-text">
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="https://omarvides.github.io/blog/tags/buenas-pr%c3%a1cticas/">buenas-prácticas</a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li>
+            <a href="https://omarvides.github.io/blog/tags/desarrollo/">desarrollo</a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li>
+            <a href="https://omarvides.github.io/blog/tags/javascript/">javascript</a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li>
+            <a href="https://omarvides.github.io/blog/tags/programaci%c3%b3n/">programación</a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+<div class="card card-block">
+  <h4 class="card-title">TAG CLOUD</h4>
+  <p class="card-text">
+    
+        <a href="https://omarvides.github.io/blog/tags/buenas-pr%c3%a1cticas/" class="badge badge-primary">
+        buenas-prácticas
+        </a>
+    
+        <a href="https://omarvides.github.io/blog/tags/desarrollo/" class="badge badge-primary">
+        desarrollo
+        </a>
+    
+        <a href="https://omarvides.github.io/blog/tags/javascript/" class="badge badge-primary">
+        javascript
+        </a>
+    
+        <a href="https://omarvides.github.io/blog/tags/programaci%c3%b3n/" class="badge badge-primary">
+        programación
+        </a>
+    
+  </p>
+</div>
+
+
+
 
 </div>
 
