@@ -8,9 +8,9 @@ tags: ["javascript", "desarrollo", "programación", "buenas prácticas"]
 ---
 
 Utilizar un linter puede mejorar dramáticamente tu código JavaScript, puede ayudarte a 
-escribir código mas limpio, mas fácil de entender y más facil de mantener.
+escribir código mas limpio, mas fácil de entender y de mantener.
 
-Usar un linter te ayuda a estandarizar el código y enforza el uso de un estilo, como consecuencia
+Usar un linter te ayuda a estandarizar el código y fortalece el uso de un estilo, como consecuencia
 mejora la forma en que los equipos colaboran en soluciones y proyectos y la calidad de los mismos.
 
 ### Que hace un linter de JavaScript?
