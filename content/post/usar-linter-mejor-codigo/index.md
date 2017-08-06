@@ -16,7 +16,7 @@ mejora la forma en que los equipos colaboran en soluciones y proyectos y la cali
 ### Que hace un linter de JavaScript?
 
 Un linter de JavaScript revisa tu código buscando errores y problemas de sintáxis, se asegura también que
-el código que escribes siga con un estilo, esto causa que todo el código escrito en un proyecto se vea como
+el código que escribes siga un estilo, esto causa que todo el código escrito en un proyecto se vea como
 si hubiera sido escrito por la misma persona, y eso lo hace mas legible y mantenible.
 
 ------
