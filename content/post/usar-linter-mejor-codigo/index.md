@@ -13,10 +13,10 @@ escribir código mas limpio, mas fácil de entender y de mantener.
 Usar un linter te ayuda a estandarizar el código y fortalece el uso de un estilo, como consecuencia
 mejora la forma en que los equipos colaboran en soluciones y proyectos y la calidad de los mismos.
 
-### Que hace un linter de JavaScript?
+### Que hace un linter?
 
-Un linter de JavaScript revisa tu código buscando errores y problemas de sintáxis, se asegura también que
-el código que escribes siga un estilo, esto causa que todo el código escrito en un proyecto se vea como
+Un linter revisa tu código buscando errores y problemas de sintáxis, se asegura también que
+el código que escribes siga un estilo, esto ayuda a que todo el código escrito en un proyecto se vea como
 si hubiera sido escrito por la misma persona, y eso lo hace mas legible y mantenible.
 
 ------
@@ -41,16 +41,18 @@ Voy a explicar como configurar ESlint para un proyecto de Node.JS, lo necesario 
 
 ### Instalar ESlint
 
+En el directorio de tu aplicación de Node, necesitarás instalar eslint como dependencia de desarrollo
+
 - Si prefieres utilizar yarn
 
     ```bash
-    yarn add eslint
+    yarn add --dev eslint
     ```
 
 - Si prefieres utilizar npm
 
     ```bash
-    npm install --save eslint
+    npm install --save-dev eslint
     ```
 
 ### Instalar eslint-config-airbnb (set de reglas de ESlint de airbnb)
@@ -65,7 +67,7 @@ Voy a explicar como configurar ESlint para un proyecto de Node.JS, lo necesario 
     ```bash
     npm info "eslint-config-airbnb@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "eslint-config-airbnb@latest"
     ```
-*Qué es esto?* las últimas versiones de las dependencias de ```eslint-config-airbnb``` en el momento que escribo éste post están rotas, lo que hace éste comando es extraer la informacion en formato JSON de los peerDependencies de ```eslint-config``` extraerlas y hacer pipe al comando ```yarn add``` o al comando ```npm install`` para que instale las versiones estables.
+*Qué es esto?* las últimas versiones de las dependencias de ```eslint-config-airbnb``` en el momento que escribo éste post están rotas, lo que hace éste comando es extraer la informacion en formato JSON de las dependencias de ```eslint-config``` y pasarlas como parámetro al comando ```yarn add``` o al comando ```npm install`` (según el caso) para instalar las versiones estables.
 
 ### Crear el archivo .eslintrc.json
 
@@ -76,6 +78,7 @@ Voy a explicar como configurar ESlint para un proyecto de Node.JS, lo necesario 
       "extends": "airbnb"
     }
     ```
+Ésto le dice a eslint que va a utilizar las reglas de airbnb.
 
 ### Instalando el plugin de ESlint
 
