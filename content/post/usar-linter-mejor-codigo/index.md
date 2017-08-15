@@ -1,8 +1,8 @@
 ---
 title: "Usar un linter mejora tu código JavaScript"
 date: 2017-07-22T12:49:07-06:00
-coverImage:  https://raw.githubusercontent.com/omarvides/blog/master/docs/post/usar-linter-mejor-codigo/constellation.jpg
-banner: https://raw.githubusercontent.com/omarvides/blog/master/docs/post/usar-linter-mejor-codigo/constellation.jpg
+coverImage:  ./constellation.jpg
+banner: ./constellation.jpg
 categories: ["JavaScript"]
 tags: ["javascript", "desarrollo", "programación", "buenas prácticas"]
 ---
