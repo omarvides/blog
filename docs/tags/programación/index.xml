@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programación on Omar Vide&#39;s Blog</title>
-    <link>https://omarvides.github.io/blog/tags/programaci%C3%B3n/</link>
+    <link>https://omarvides.github.io/tags/programaci%C3%B3n/</link>
     <description>Recent content in Programación on Omar Vide&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Jul 2017 12:49:07 -0600</lastBuildDate>
     
-	<atom:link href="https://omarvides.github.io/blog/tags/programaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://omarvides.github.io/tags/programaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Usar un linter mejora tu código JavaScript</title>
-      <link>https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/</link>
+      <link>https://omarvides.github.io/post/usar-linter-mejor-codigo/</link>
       <pubDate>Sat, 22 Jul 2017 12:49:07 -0600</pubDate>
       
-      <guid>https://omarvides.github.io/blog/post/usar-linter-mejor-codigo/</guid>
+      <guid>https://omarvides.github.io/post/usar-linter-mejor-codigo/</guid>
       <description>Utilizar un linter puede mejorar dramáticamente tu código JavaScript, puede ayudarte a escribir código mas limpio, mas fácil de entender y de mantener.
 Usar un linter te ayuda a estandarizar el código y fortalece el uso de un estilo, como consecuencia mejora la forma en que los equipos colaboran en soluciones y proyectos y la calidad de los mismos.
 Que hace un linter? Un linter revisa tu código buscando errores y problemas de sintáxis, se asegura también que el código que escribes siga un estilo, esto ayuda a que todo el código escrito en un proyecto se vea como si hubiera sido escrito por la misma persona, y eso lo hace mas legible y mantenible.</description>

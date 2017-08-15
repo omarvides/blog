@@ -80,9 +80,25 @@ En el directorio de tu aplicación de Node, necesitarás instalar eslint como de
     ```
 Ésto le dice a eslint que va a utilizar las reglas de airbnb.
 
-### Instalando el plugin de ESlint
+### Instalando el plugin de ESlint en tu editor
 
 #### En Visual Studio Code
+
+- 
+
+#### En Atom
+
+-
+
+### En Sublime Text
+
+- Con visual studio code abierto, presiona
+
+En Windows 
+
+``` Ctrl + Shift + P```
+
+En Mac
 
 - Ctrl/Cmd + Shift + P and then type Extensions: Install Extensions
 - Look for ESlint pluging and install it
