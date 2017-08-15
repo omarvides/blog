@@ -1,8 +1,8 @@
 ---
 title: "Usar un linter mejora tu código JavaScript"
 date: 2017-07-22T12:49:07-06:00
-coverImage:  constellation.jpg
-banner: constellation.jpg
+coverImage:  assets/images/constellation.jpg
+banner: assets/images/constellation.jpg
 categories: ["JavaScript"]
 tags: ["javascript", "desarrollo", "programación", "buenas prácticas"]
 ---
