@@ -21,9 +21,9 @@ si hubiera sido escrito por la misma persona, y eso lo hace mas legible y manten
 
 ------
 
-### Configurando un linter
+### Configurando un ESlint
 
-Voy a explicar como configurar ESlint para un proyecto de Node.JS, lo necesario es:
+Lo que necesitas para configurar ESlint para un proyecto de Node.JS, lo necesario es:
 
 - Un plugin de ESlint para el editor que utilizas
 - Dependencias de ESlint en tu proyecto de Node
