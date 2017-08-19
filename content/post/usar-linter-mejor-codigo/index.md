@@ -10,8 +10,8 @@ tags: ["javascript", "desarrollo", "programación", "buenas prácticas"]
 Utilizar un linter puede mejorar dramáticamente tu código JavaScript, puede ayudarte a 
 escribir código mas limpio, mas fácil de entender y de mantener.
 
-Usar un linter te ayuda a estandarizar el código y fortalece el uso de un estilo, como consecuencia
-mejora la forma en que los equipos colaboran en soluciones y proyectos y la calidad de los mismos.
+También te ayuda a estandarizar el código y fortalece el uso de un estilo, como consecuencia
+mejora la forma en que los equipos colaboran en proyectos y la calidad de los mismos.
 
 ### Que hace un linter?
 
@@ -21,9 +21,9 @@ si hubiera sido escrito por la misma persona, y eso lo hace mas legible y manten
 
 ------
 
-### Configurando un ESLint
+### Configurar un linter para tu proyecto de NodeJS
 
-Lo que necesitas para configurar ESLint para un proyecto de Node.JS, lo necesario es:
+Utilizaremos ESLint. Lo que necesitas para configurar ESLint para un proyecto de Node.JS es:
 
 - Un plugin de ESLint para el editor que utilizas
 - Dependencias de ESLint en tu proyecto de Node
@@ -80,12 +80,12 @@ En el directorio de tu aplicación de Node, necesitarás instalar ESLint como de
     ```
 Ésto le dice a ESLint que va a utilizar las reglas de airbnb.
 
-### Instalando el plugin de ESLint en tu editor
+### Instalando el plugin de ESLint en tu editor (Para Visual Code y Atom)
 
 El paquete a instalar es un plugin de ESLint en tu editor preferido, los pasos por editor para acceder a la lista de paquetes son
 
 
-### En Visual Code, Atom  para acceder al manejador de paquetes
+### Acceder al manejador de paquetes (En Visual Code y Atom)
 
 En Windows 
 
@@ -106,9 +106,9 @@ En Mac
 
 #### Instalar ESLint
 
-En todos Visual Code el paquete a buscar e instalar se llama ```ESLint```.
+En todos Visual Code el paquete a instalar se llama ```ESLint```.
 
-En Atom el paquete a buscar e instalar se llama ```linter-eslint```, permitir que instale sus dependencias si el editor pregunta
+En Atom el paquete a instalar se llama ```linter-eslint```. con cualquier dependencia que el editor necesite instalar
 
 
 #### Usando ESLint
