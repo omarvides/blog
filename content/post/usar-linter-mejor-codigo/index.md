@@ -46,32 +46,32 @@ En el directorio de tu aplicación de Node, necesitarás instalar ESLint como de
 - Si prefieres utilizar yarn
 
     ```bash
-    yarn add --dev ESLint
+    yarn add --dev eslint
     ```
 
 - Si prefieres utilizar npm
 
     ```bash
-    npm install --save-dev ESLint
+    npm install --save-dev eslint
     ```
 
-### Instalar ESLint-config-airbnb (set de reglas de ESLint de airbnb)
+### Instalar eslint-config-airbnb (set de reglas de ESLint de airbnb)
     
 - Utilizando ```yarn``` como manejador de paquetes
 
     ```bash
-    npm info "ESLint-config-airbnb@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "ESLint-config-airbnb@latest"
+    npm info "eslint-config-airbnb@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev "eslint-config-airbnb@latest"
     ```
 - Utilizando ```npm``` como manejador de paquetes
 
     ```bash
-    npm info "ESLint-config-airbnb@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "ESLint-config-airbnb@latest"
+    npm info "eslint-config-airbnb@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "eslint-config-airbnb@latest"
     ```
-*Qué es esto?* las últimas versiones de las dependencias de ```ESLint-config-airbnb``` en el momento que escribo éste post están rotas, lo que hace éste comando es extraer la informacion en formato JSON de las dependencias de ```ESLint-config``` y pasarlas como parámetro al comando ```yarn add``` o al comando ```npm install`` (según el caso) para instalar las versiones estables.
+*Qué es esto?* las últimas versiones de las dependencias de ```eslint-config-airbnb``` en el momento que escribo éste post están rotas, lo que hace éste comando es extraer la informacion en formato JSON de las dependencias de ```eslint-config``` y pasarlas como parámetro al comando ```yarn add``` o al comando ```npm install`` (según el caso) para instalar las versiones estables.
 
-### Crear el archivo .ESLintrc.json
+### Crear el archivo .eslint.json
 
-- En la raíz de tu proyecto crea el archivo .ESLintrc.json con el contenido
+- En la raíz de tu proyecto crea el archivo .eslint.json con el contenido
 
     ```json
     {
@@ -106,7 +106,7 @@ En Mac
 
 #### Instalar ESLint
 
-En todos Visual Code el paquete a instalar se llama ```ESLint```.
+En todos Visual Code el paquete a instalar se llama ```eslint```.
 
 En Atom el paquete a instalar se llama ```linter-eslint```. con cualquier dependencia que el editor necesite instalar
 
