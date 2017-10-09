@@ -122,4 +122,8 @@ Una vez instalado en el editor si todos los pasos se hicieron correctamente, el 
 *ESLint instalado en Visual Code*
 {{< figure src="/assets/images/eslint-visual-code-in-action.png" width="100%">}}
 
+#### Código fuente
 
+El código fuente del ejemplo del post está en bajo el folder ejemplo-linter en el repository
+
+https://github.com/omarvides/ejemplos-blog
