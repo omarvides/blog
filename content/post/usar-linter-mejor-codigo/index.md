@@ -106,9 +106,9 @@ En Mac
 
 #### Instalar ESLint
 
-En todos Visual Code el paquete a instalar se llama ```eslint```.
+En Visual Code el paquete a instalar se llama ```eslint```.
 
-En Atom el paquete a instalar se llama ```linter-eslint```. con cualquier dependencia que el editor necesite instalar
+En Atom el paquete a instalar se llama ```linter-eslint```. atom instalará o solicitara permiso para instalar las dependencias del paquete.
 
 
 #### Usando ESLint
